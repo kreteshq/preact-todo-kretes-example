@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Kretes App</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@1.5.1/dist/tailwind.min.css">
+  </head>
+  <body class="bg-gray-100 m-8">
+    <div class="p-8 bg-white shadow">
+      <div id="app"></div>
+      <h1 class="text-5xl"><span class="font-bold">Hello</span>, Kretes!</h1>
+    </div>
+    <div class="text-xl text-gray-500 text-center mt-2">Kretes</div>
+    <script type="module">
+      import { h, render } from 'preact';
+      import htm from 'htm';
+
+      import { App } from 'Base/View';
+      const html = htm.bind(h);
+
+      render(html`<${App} name="Zaiste" />`, document.getElementById('app'));
+
+      </script>
+  </body>
+</html>
+
