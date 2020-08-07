@@ -13,10 +13,9 @@
     <div class="text-xl text-gray-500 text-center mt-2">Kretes</div>
     <script type="module">
       import { h, render } from 'preact';
-      import htm from 'htm';
+      import { html } from 'htm/preact';
 
       import { App } from 'Base/View';
-      const html = htm.bind(h);
 
       render(html`<${App} name="Zaiste" />`, document.getElementById('app'));
 

@@ -1,7 +1,5 @@
-import { h, render } from 'preact';
-import htm from 'htm';
 
-const html = htm.bind(h);
+import { html } from 'htm/preact';
 
 function App(props: any) {
   return html`<h1>Hello ${props.name}!</h1>`;
