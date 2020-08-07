@@ -3,7 +3,7 @@ dependencies:
   kretes: 'link:../kretes'
   preact: 10.4.7
 devDependencies:
-  '@wessberg/rollup-plugin-ts': 1.3.2_rollup@2.23.0+typescript@3.9.7
+  '@wessberg/rollup-plugin-ts': 1.3.2_0d959001d2910bfca5b1fcf00dca68b3
   autoprefixer: 9.8.6
   chokidar: 3.4.2
   cross-env: 7.0.2
@@ -14,7 +14,7 @@ devDependencies:
   rollup: 2.23.0
   snowpack: 2.7.6
   tailwindcss: 1.6.2
-  typescript: 3.9.7
+  typescript: 4.0.1-rc
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.10.4:
@@ -1271,7 +1271,7 @@ packages:
       node: '>=8.0.0'
     resolution:
       integrity: sha512-GQnyma+YJGOpl0Euopv0HDcVLdIXRwb6Slb7RDtnXVAx1MklvT3Rg7JOhD0fqMQuvqQ50wRBRNFUwn9j2bqY1w==
-  /@wessberg/rollup-plugin-ts/1.3.2_rollup@2.23.0+typescript@3.9.7:
+  /@wessberg/rollup-plugin-ts/1.3.2_0d959001d2910bfca5b1fcf00dca68b3:
     dependencies:
       '@babel/core': 7.11.1
       '@babel/plugin-proposal-async-generator-functions': 7.10.5_@babel+core@7.11.1
@@ -1287,14 +1287,14 @@ packages:
       '@types/babel__core': 7.1.9
       '@wessberg/browserslist-generator': 1.0.37
       '@wessberg/stringutil': 1.0.19
-      '@wessberg/ts-clone-node': 0.3.11_typescript@3.9.7
+      '@wessberg/ts-clone-node': 0.3.11_typescript@4.0.1-rc
       browserslist: 4.14.0
       chalk: 4.1.0
       magic-string: 0.25.7
       rollup: 2.23.0
       slash: 3.0.0
       tslib: 2.0.1
-      typescript: 3.9.7
+      typescript: 4.0.1-rc
     dev: true
     engines:
       node: '>=10.0.0'
@@ -1309,9 +1309,9 @@ packages:
       node: '>=8.0.0'
     resolution:
       integrity: sha512-9AZHVXWlpN8Cn9k5BC/O0Dzb9E9xfEMXzYrNunwvkUTvuK7xgQPVRZpLo+jWCOZ5r8oBa8NIrHuPEu1hzbb6bg==
-  /@wessberg/ts-clone-node/0.3.11_typescript@3.9.7:
+  /@wessberg/ts-clone-node/0.3.11_typescript@4.0.1-rc:
     dependencies:
-      typescript: 3.9.7
+      typescript: 4.0.1-rc
     dev: true
     engines:
       node: '>=10.0.0'
@@ -2485,7 +2485,7 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
-  /got/11.5.1:
+  /got/11.5.2:
     dependencies:
       '@sindresorhus/is': 3.1.0
       '@szmarczak/http-timer': 4.0.5
@@ -2502,7 +2502,7 @@ packages:
     engines:
       node: '>=10.19.0'
     resolution:
-      integrity: sha512-reQEZcEBMTGnujmQ+Wm97mJs/OK6INtO6HmLI+xt3+9CvnRwWjXutUvb2mqr+Ao4Lu05Rx6+udx9sOQAmExMxA==
+      integrity: sha512-yUhpEDLeuGiGJjRSzEq3kvt4zJtAcjKmhIiwNp/eUs75tRlXfWcHo5tcBaMQtnjHWC7nQYT5HkY/l0QOQTkVww==
   /got/9.6.0:
     dependencies:
       '@sindresorhus/is': 0.14.0
@@ -3092,14 +3092,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
-  /log-symbols/4.0.0:
+  /log-symbols/3.0.0:
     dependencies:
-      chalk: 4.1.0
+      chalk: 2.4.2
     dev: true
     engines:
-      node: '>=10'
+      node: '>=8'
     resolution:
-      integrity: sha512-FN8JBzLx6CzeMrB0tg6pqlGU1wCrXW+ZXGH481kfsBqer0hToTIiHdjH4Mq8xJUbvATujKCvaREGWpGUionraA==
+      integrity: sha512-dSkNGuI7iG3mfvDzUuYZyvk5dD9ocYCYzNU6CYDE6+Xqd+gwme6Z00NS3dUh8mq/73HaEtT7m6W+yUPtU6BZnQ==
   /loose-envify/1.4.0:
     dependencies:
       js-tokens: 4.0.0
@@ -3570,13 +3570,13 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-lLPI5KgOwEYCDKXf4np7y1PBEkj7HYIyP2DY8mVDRnx0VIIu6bNrRB0R66TuO7Mack6EnTNLm4uvcl1UoklTpA==
-  /ora/4.1.0:
+  /ora/4.1.1:
     dependencies:
-      chalk: 4.1.0
+      chalk: 3.0.0
       cli-cursor: 3.1.0
       cli-spinners: 2.4.0
       is-interactive: 1.0.0
-      log-symbols: 4.0.0
+      log-symbols: 3.0.0
       mute-stream: 0.0.8
       strip-ansi: 6.0.0
       wcwidth: 1.0.1
@@ -3584,7 +3584,7 @@ packages:
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-PhDvXi7I+dLVyFekgqXt0iBDdo5ARzOxJNoj72TysoXkW4/oi1lRaeakr4skciyWgPpk6JPPGwO1V4zPr6YRZA==
+      integrity: sha512-sjYP8QyVWBpBZWD6Vr1M/KwknSw6kJOz41tvGMlwWeClHBtYKTbHMki1PsLZnxKpXMPbTKv9b3pjQu3REib96A==
   /os-homedir/1.0.2:
     dev: true
     engines:
@@ -4381,7 +4381,7 @@ packages:
       find-cache-dir: 3.3.1
       find-up: 4.1.0
       glob: 7.1.6
-      got: 11.5.1
+      got: 11.5.2
       http-proxy: 1.18.1
       is-builtin-module: 3.0.0
       jsonschema: 1.2.6
@@ -4390,7 +4390,7 @@ packages:
       mkdirp: 1.0.4
       npm-run-path: 4.0.1
       open: 7.1.0
-      ora: 4.1.0
+      ora: 4.1.1
       p-queue: 6.6.0
       resolve-from: 5.0.0
       rimraf: 3.0.2
@@ -4709,13 +4709,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==
-  /typescript/3.9.7:
+  /typescript/4.0.1-rc:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
+      integrity: sha512-TCkspT3dSKOykbzS3/WSK7pqU2h1d/lEO6i45Afm5Y3XNAEAo8YXTG3kHOQk/wFq/5uPyO1+X8rb/Q+g7UsxJw==
   /ua-parser-js/0.7.21:
     dev: true
     resolution:
@@ -4985,4 +4985,4 @@ specifiers:
   rollup: ^2.23.0
   snowpack: ^2.7.6
   tailwindcss: ^1.6.2
-  typescript: ^3.9.7
+  typescript: ^4.0.1-rc
