@@ -1,3 +1,60 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+input:checked+svg {
+  display: block;
+}
+
+.button {
+  @apply bg-blue-500 p-4;
+}
+
+.task-new {
+  @apply p-4 pr-20 border-l-4 border-gray-500 bg-gray-200 w-full shadow-inner outline-none;
+}
+
+.task-add {
+  @apply shadow text-blue-100 border-blue-100 bg-gray-500 font-semibold py-2 px-4 absolute right-0 mr-2 ;
+  &:hover {
+    @apply text-blue-200;
+
+  }
+
+  &:focus {
+    @apply outline-none;
+  }
+}
+
+.task-checkbox-container {
+  @apply flex justify-start items-center p-4;
+}
+
+.task-checkbox {
+  @apply bg-white border-2 rounded border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2;
+
+  &:focus-within {
+    @apply border-blue-500;
+  }
+}
+
+.task-checkbox-icon {
+  @apply fill-current hidden w-4 h-4 text-green-500 pointer-events-none;
+}
+
+.task-list {
+  @apply m-0 my-2 p-0 list-none w-full;
+}
+
+.task-item-container {
+  @apply flex justify-start items-center p-4;
+}
+
+.task-item {
+  @apply bg-white shadow mb-2;
+}
+
+.task-container {
+  @apply max-w-2xl mx-auto;
+}
+
+.task-input {
+  @apply flex items-center justify-between relative mb-8;
+}
+
