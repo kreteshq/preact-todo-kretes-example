@@ -21,12 +21,14 @@
       "/modules/*.js": [
         "node_modules/@types/*",
         "node_modules/*",
-        "modules/*.js",
+        "modules/*.js"
       ]
     },
     "esModuleInterop": true,
     "experimentalDecorators": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment"
   },
   "include": [
     "*.ts",
