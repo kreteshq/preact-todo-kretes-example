@@ -4,16 +4,28 @@ interface Props {
   page?: string,
 }
 
+interface Task {
+  name: string;
+  done: boolean
+};
+
 interface State {
-  todos: string[]
+  newTask: string;
+  tasks: Task[];
 }
 
 class App extends Component<Props, State> {
-  addTodo() {
-    const { todos = [] } = this.state;
-    this.setState({ todos: todos.concat(`Item ${todos.length}`) });
+  addTodo = () => {
+    const { tasks = [], newTask: name } = this.state;
+    this.setState({ tasks: tasks.concat({ name, done: false }) });
   }
-  render({ }: Props, { todos = [] }: State) {
+
+  onInput = (event: Event) => {
+    const { value } = event.target as HTMLInputElement;
+    this.setState({ newTask: value })
+  }
+
+  render({ }: Props, { tasks = [], newTask }: State) {
     return (
       <div class="task-container">
         <div class="task-input">
@@ -21,22 +33,25 @@ class App extends Component<Props, State> {
             placeholder="Add new item..."
             type="text"
             class="task-new"
-            v-model="state.newTask"
+            value={newTask}
+            onInput={this.onInput}
           />
-          <button class="task-add">Add</button>
+          <button class="task-add" onClick={this.addTodo}>Add</button>
         </div>
         <ul class="task-list">
-          <li class="task-item" v-for="task in state.tasks">
-            <label class="task-item-container">
-              <div class="task-checkbox">
-                <input type="checkbox" class="opacity-0 absolute" />
-                <svg class="task-checkbox-icon" viewBox="0 0 20 20">
-                  <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
-                </svg>
-              </div>
-              <div class="ml-2">test</div>
-            </label>
-          </li>
+          {tasks.map((task, index) => (
+            <li key={index} class="task-item" v-for="task in state.tasks">
+              <label class="task-item-container">
+                <div class="task-checkbox">
+                  <input type="checkbox" class="opacity-0 absolute" value={task.done} />
+                  <svg class="task-checkbox-icon" viewBox="0 0 20 20">
+                    <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+                  </svg>
+                </div>
+                <div class="ml-2">{task.name}</div>
+              </label>
+            </li>
+          ))}
         </ul>
       </div>
     );
