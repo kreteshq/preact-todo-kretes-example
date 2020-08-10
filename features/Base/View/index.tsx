@@ -25,6 +25,13 @@ class App extends Component<Props, State> {
     this.setState({ newTask: value })
   }
 
+  onKeyUp = (event: KeyboardEvent) => {
+    const { key } = event;
+    if (key === 'Enter') {
+      this.addTodo();
+    }
+  }
+
   render({ }: Props, { tasks = [], newTask }: State) {
     return (
       <div class="task-container">
@@ -35,6 +42,7 @@ class App extends Component<Props, State> {
             class="task-new"
             value={newTask}
             onInput={this.onInput}
+            onKeyUp={this.onKeyUp}
           />
           <button class="task-add" onClick={this.addTodo}>Add</button>
         </div>
