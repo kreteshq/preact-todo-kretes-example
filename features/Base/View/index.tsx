@@ -17,7 +17,7 @@ interface State {
 class App extends Component<Props, State> {
   addTodo = () => {
     const { tasks = [], newTask: name } = this.state;
-    this.setState({ tasks: tasks.concat({ name, done: false }) });
+    this.setState({ tasks: tasks.concat({ name, done: false }), newTask: '' });
   }
 
   onInput = (event: Event) => {
