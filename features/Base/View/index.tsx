@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import { useState } from 'preact/hooks';
+import { useState, useEffect } from 'preact/hooks';
 
 interface Task {
   name: string;
@@ -9,6 +9,16 @@ interface Task {
 function App() {
   const [newTask, setNewTask] = useState('');
   const [tasks, setTasks] = useState([] as Task[]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch('/task');
+      const result = await response.json();
+      setTasks(result);
+    };
+
+    fetchData();
+  }, [])
 
   const addTodo = () => {
     setTasks([...tasks, { name: newTask, done: false }]);
