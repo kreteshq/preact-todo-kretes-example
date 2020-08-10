@@ -1,5 +1,7 @@
 # README
 
+![Preact in Kretes](https://user-images.githubusercontent.com/200613/89803371-090ec780-db33-11ea-9c60-58e7636d93ae.png)
+
 ## Getting Started
 
 ### Using VS Code (Recommended)
