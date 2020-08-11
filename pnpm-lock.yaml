@@ -1017,7 +1017,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-nFtqjVETliApiRdjbYwKwhlSHx2ZMagyj5b9YbNt0BWeeOVxJd47ZVE2u16vxDHyTOZvk+YLV7INwfAE9a2uow==
-  /@npmcli/run-script/1.4.0:
+  /@npmcli/run-script/1.5.0:
     dependencies:
       '@npmcli/promise-spawn': 1.2.0
       infer-owner: 1.0.4
@@ -1025,7 +1025,7 @@ packages:
       read-package-json-fast: 1.1.3
     dev: true
     resolution:
-      integrity: sha512-evlD0Ur2ILGyTP7FfMYi90x80bto9+nEbGjoWzdF+gmIX3HuA1nW0Ghj91JFaTJAHiXnDEEduZS24oAve/aeOA==
+      integrity: sha512-z7AzLmsMtVntMRJt35M5VAjb/jH6yH37Q8Ku011JVR7rEoy+p2a6/NkwqChCRZORlJaS9rwjXmZKM6UmwXLkqA==
   /@rollup/plugin-alias/3.1.1_rollup@2.23.1:
     dependencies:
       rollup: 2.23.1
@@ -1293,7 +1293,7 @@ packages:
       '@types/semver': 7.3.1
       '@types/ua-parser-js': 0.7.33
       browserslist: 4.12.0
-      caniuse-lite: 1.0.30001112
+      caniuse-lite: 1.0.30001113
       mdn-browser-compat-data: 1.0.26
       object-path: 0.11.4
       semver: 7.3.2
@@ -1520,7 +1520,7 @@ packages:
   /autoprefixer/9.8.6:
     dependencies:
       browserslist: 4.14.0
-      caniuse-lite: 1.0.30001112
+      caniuse-lite: 1.0.30001113
       colorette: 1.2.1
       normalize-range: 0.1.2
       num2fraction: 1.2.2
@@ -1592,8 +1592,8 @@ packages:
       integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
   /browserslist/4.12.0:
     dependencies:
-      caniuse-lite: 1.0.30001112
-      electron-to-chromium: 1.3.526
+      caniuse-lite: 1.0.30001113
+      electron-to-chromium: 1.3.529
       node-releases: 1.1.60
       pkg-up: 2.0.0
     dev: true
@@ -1602,8 +1602,8 @@ packages:
       integrity: sha512-UH2GkcEDSI0k/lRkuDSzFl9ZZ87skSy9w2XAn1MsZnL+4c4rqbBd3e82UWHbYDpztABrPBhZsTEeuxVfHppqDg==
   /browserslist/4.14.0:
     dependencies:
-      caniuse-lite: 1.0.30001112
-      electron-to-chromium: 1.3.526
+      caniuse-lite: 1.0.30001113
+      electron-to-chromium: 1.3.529
       escalade: 3.0.2
       node-releases: 1.1.60
     dev: true
@@ -1710,10 +1710,10 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
-  /caniuse-lite/1.0.30001112:
+  /caniuse-lite/1.0.30001113:
     dev: true
     resolution:
-      integrity: sha512-J05RTQlqsatidif/38aN3PGULCLrg8OYQOlJUKbeYVzC2mGZkZLIztwRlB3MtrfLmawUmjFlNJvy/uhwniIe1Q==
+      integrity: sha512-qMvjHiKH21zzM/VDZr6oosO6Ri3U0V2tC015jRXjOecwQCJtsU5zklTNTk31jQbIOP8gha0h1ccM/g0ECP+4BA==
   /caseless/0.12.0:
     dev: true
     resolution:
@@ -2169,10 +2169,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-OoOpBOVDUyh4dMVkt1SThoSamMk=
-  /electron-to-chromium/1.3.526:
+  /electron-to-chromium/1.3.529:
     dev: true
     resolution:
-      integrity: sha512-HiroW5ZbGwgT8kCnoEO8qnGjoTPzJxduvV/Vv/wH63eo2N6Zj3xT5fmmaSPAPUM05iN9/5fIEkIg3owTtV6QZg==
+      integrity: sha512-n3sriLldqNyjBlosbnPftjCY+m1dVOY307I1Y0HaHAqDGe3hRvK7ksJwWd+qs599ybR4jobCo1+7zXM9GyNMSA==
   /emoji-regex/7.0.3:
     dev: true
     resolution:
@@ -2214,12 +2214,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-jm/i7KdJtaMDle921xIsA/MQQOGuZ6goYxhlV+k+gQNI7FtP4N6jknrmJvj++3ODpiyFGwQ4PIstJfHJQJNc+g==
-  /esbuild/0.6.19:
+  /esbuild/0.6.20:
     dev: true
     hasBin: true
     requiresBuild: true
     resolution:
-      integrity: sha512-yFoX6XKDNZKPMHWf3W7L40zWC7aCm3WPWucqs7U/4YQgQYbsjx08K5j7FUQ/9pwHNhMzrSzKFR6MdD4/V+L/Pw==
+      integrity: sha512-TR7HxD+sDJ1P67Loc8UDlRMeBEiJMS5L4yVLsiCwE48TyHDP7CGfkDHZDr9BKIFTK+0fuk7w/St1/PzBXpBRlQ==
   /escalade/3.0.2:
     dev: true
     engines:
@@ -3718,7 +3718,7 @@ packages:
       '@npmcli/git': 2.0.3
       '@npmcli/installed-package-contents': 1.0.5
       '@npmcli/promise-spawn': 1.2.0
-      '@npmcli/run-script': 1.4.0
+      '@npmcli/run-script': 1.5.0
       cacache: 15.0.5
       chownr: 2.0.0
       fs-minipass: 2.1.0
@@ -4390,7 +4390,7 @@ packages:
       deepmerge: 4.2.2
       detect-port: 1.3.0
       es-module-lexer: 0.3.24
-      esbuild: 0.6.19
+      esbuild: 0.6.20
       etag: 1.8.1
       execa: 4.0.3
       find-cache-dir: 3.3.1
