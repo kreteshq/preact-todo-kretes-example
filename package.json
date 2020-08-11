@@ -2,7 +2,9 @@
   "name": "kretes-preact-example",
   "version": "0.0.1",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "css": "NODE_ENV='production' tailwindcss build stylesheets/main.css -o public/main.css -c config/tailwind.config.js"
+  },
   "dependencies": {
     "htm": "^3.0.4",
     "kretes": "link:../kretes",
