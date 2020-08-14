@@ -1,6 +1,6 @@
 # README
 
-![Preact in Kretes](https://user-images.githubusercontent.com/200613/89803371-090ec780-db33-11ea-9c60-58e7636d93ae.png)
+![ToDo in Preact with Kretes](https://user-images.githubusercontent.com/200613/90222429-55485900-de0c-11ea-8a52-49fbbcf6cd3c.gif)
 
 ## Getting Started
 
